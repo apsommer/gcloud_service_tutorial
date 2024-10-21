@@ -2,10 +2,13 @@ import os
 from flask import Flask
 
 """
+https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-service
+
 This code responds to requests with our "Hello World" greeting. HTTP handling is done by a Gunicorn web server in the 
 container. When directly invoked for local use, this code creates a basic web server that listens on the port defined 
 by the PORT environment variable.
 """
+
 app = Flask(__name__)
 
 @app.route("/")
